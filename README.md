@@ -16,13 +16,11 @@ Crafted for scenarios where traditional tools might be absent or restricted, Bas
 
 ## Tested On
 
-|                  | **Distribution**  | **Icon**                                                      |
-| :--------------: | :---------------: | :-----------------------------------------------------------: |
-| **🐧 Linux**     | **Linux**         | ![Tested on Linux](https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg) |
-| **🎯 Debian**    | **Debian**        | ![Debian](https://www.debian.org/logos/openlogo-nd-100.png)    |
-| **🐉 Kali**      | **Kali**          | ![Kali Linux](https://www.offensive-security.com/wp-content/uploads/2015/05/kali-dragon-icon.svg) |
-| **🦜 Parrot**    | **Parrot OS**     | ![Parrot OS](https://community.parrotsec.org/uploads/default/original/2X/c/c79f153e6db8de30620760c64df68f5a17b5a2bb.png) |
-| **📦 Arch**      | **Arch Linux**    | ![Arch Linux](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Archlinux-icon-crystal-64.svg/64px-Archlinux-icon-crystal-64.svg.png) |
+| Distribution | Logo |
+|--------------|------|
+| **Mint**     | <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Linux_Mint_logo_without_wordmark.svg" alt="Mint" width="100"/> |
+| **Kali**     | <img src="https://www.kali.org/images/kali-dragon-icon.svg" alt="Kali" width="100"/> |
+| **Arch**     | <img src="https://i.pinimg.com/564x/37/a2/10/37a2104ab623f2c68820686b2fb593d7.jpg" alt="Arch" width="100"/> |
 
 ---
 
@@ -32,5 +30,15 @@ Crafted for scenarios where traditional tools might be absent or restricted, Bas
 Clone the repository and navigate to the directory:
 
 ```bash
-git clone https://github.com/yourusername/bashscan.git
-cd bashscan
+git clone https://github.com/MIISTERC/BashScan.git
+cd BashScan
+chmod +x BashScan
+./BashScan
+```
+
+## ⚠️ **Warnings** ⚠️
+
+1. **Adjusting Speed:** You can modify the speed of BashScan by increasing or decreasing the number of concurrent jobs. The default value is set to `30`. Increasing this value will speed up the scan, while decreasing it will slow down the process. **Note:** It is *not recommended* to exceed `50` concurrent jobs as it might crash your computer. 🖥️💥
+
+2. **CPU Usage:** When running a port scan against your **localhost**, BashScan may consume a high amount of CPU resources. However, when scanning an external IP, the script will operate normally. 🚦🔄
+
