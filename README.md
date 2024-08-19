@@ -1,22 +1,36 @@
 # BashScan: The Bash Wizard Port Scanner! 🧙‍♂️✨
+![(BashScan!)](https://github.com/user-attachments/assets/13928fea-a608-4a66-acc5-8817d47d1d5f)
+## What is BashScan? 🤔
 
-![BashScan Logo](https://img.shields.io/badge/BashScan-v1.0-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg) ![Contributors](https://img.shields.io/github/contributors/yourusername/BashScan.svg) ![Issues](https://img.shields.io/github/issues/yourusername/BashScan.svg)
+BashScan is a sleek, fast port scanner written in Bash! Whether you're tackling a CTF challenge, testing internal machines, or just scanning for open ports, BashScan's got you covered. 🚀
 
-## Overview
-**BashScan** is your go-to tool for fast and efficient port scanning in environments where traditional tools like `curl` or `wget` are missing. Designed for both CTF challenges and professional use, BashScan is like having a port scanner with a built-in cup of coffee! ☕
+Crafted for scenarios where traditional tools might be absent or restricted, BashScan is optimized for both CTFs and professional use. It’s like having a port scanner with a built-in cup of coffee! ☕🔍
 
-![BashScan in Action](https://media.giphy.com/media/26Ff1dDjp7vju/giphy.gif)
+## Why Use BashScan? 🔍
 
-## Features
-- **Versatile Scanning:** Works with `/dev/tcp` and `nc` (netcat), adapting to the environment.
-- **CIDR Notation Support:** Automatically handles IP ranges, making it ideal for scanning subnets.
-- **Concurrent Jobs:** Optimized for performance with configurable concurrency, reducing scan times.
+- **Fast and Efficient**: Scans ports quickly and effectively. ⏱️
+- **Flexible Methods**: Choose between `nc` or `/dev/tcp` based on availability. ⚙️
+- **High Compatibility**: Ideal for environments where traditional tools are absent. 🛠️
+- **Lightweight**: Minimal resource usage for maximum performance. 🏆
+- **Tested on Linux**: Works seamlessly in Linux environments. 🐧
 
-## Why BashScan?
-Ever found yourself in a CTF or a machine where `curl` and `wget` are missing? Or faced with static binaries and no easy way to perform a port scan? BashScan has you covered! It’s designed to handle those tricky situations and streamline your scanning process.
+## Tested On
 
-![Scanning](https://media.giphy.com/media/xT1XGvEKtX75jS1I1O/giphy.gif)
+|                  | **Distribution**  | **Icon**                                                      |
+| :--------------: | :---------------: | :-----------------------------------------------------------: |
+| **🐧 Linux**     | **Linux**         | ![Tested on Linux](https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg) |
+| **🎯 Debian**    | **Debian**        | ![Debian](https://www.debian.org/logos/openlogo-nd-100.png)    |
+| **🐉 Kali**      | **Kali**          | ![Kali Linux](https://www.offensive-security.com/wp-content/uploads/2015/05/kali-dragon-icon.svg) |
+| **🦜 Parrot**    | **Parrot OS**     | ![Parrot OS](https://community.parrotsec.org/uploads/default/original/2X/c/c79f153e6db8de30620760c64df68f5a17b5a2bb.png) |
+| **📦 Arch**      | **Arch Linux**    | ![Arch Linux](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Archlinux-icon-crystal-64.svg/64px-Archlinux-icon-crystal-64.svg.png) |
 
-## Usage
+---
+
+> Note: If you use this scanner against your localhost, it will consume high CPU resources. On other IPs, it will perform normally.
+## Installation 📦
+
+Clone the repository and navigate to the directory:
+
 ```bash
-./BashScan.sh <target_ip> <start_port> <end_port> [method]
+git clone https://github.com/yourusername/bashscan.git
+cd bashscan
