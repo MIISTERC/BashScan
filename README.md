@@ -12,7 +12,7 @@ Crafted for scenarios where traditional tools might be absent or restricted, Bas
 - **Flexible Methods**: Choose between `nc` or `/dev/tcp` based on availability. ⚙️
 - **High Compatibility**: Ideal for environments where traditional tools are absent. 🛠️
 - **Lightweight**: Minimal resource usage for maximum performance. 🏆
-- **CIDR-Notation**: Accept IP addresses givemn in CIDR notation.
+- **CIDR-Notation**: Accept IP addresses given in CIDR notation.
 - **Tested on Linux**: Works seamlessly in Linux environments. 🐧
 
 ## Tested On
